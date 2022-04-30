@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    
+    background-color: rgb(252, 244, 235);
+    
+}
+.two{
+    width: 100%;
+    display: flex;
+    
+    
+}
+.card-body{
+    
+    box-shadow: 0 0 20px 7px rgb(0, 0, 0,0.1);
+}
+.card{
+    margin: 20px 10px ;
+}
+.maa{
+    background-color: rgb(198, 255, 236);
+
+
+}
+.link-primary{
+    display: flex;
+    align-items: flex-end;
+}
