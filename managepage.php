@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
   <link rel="stylesheet" href="myshop.css">
   
 </head>
@@ -23,14 +25,16 @@
   <div class="one">
     <nav class="navbar navbar-light bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/pruductpage.php">
-          <img src="img/spas.png" alt="" width="30" height="24">
+        <a class="navbar-brand" href="pruductpage.php">
+          <img src="img/beelogo-removebg-preview.png" alt="logo" width="125px" height="75px">
         </a>
-        <a href="productpage.php">hame page</a>
+        <a  class="ba" href="pruductpage.php">hame page</a>
+
       </div>
     </nav>
   </div>
   <div class="maa">
+  <h2 class="h2">Add Item </h2>
   
   <form action="managepage.php" method="post">
         <div class="container">
@@ -38,10 +42,14 @@
                 <label for="exampleFormControlInput1" class="form-label">Product name</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="pname" required>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"> image </label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="image/surce.webp" name="pimg" >
+            <div class="form-group">
+                 <label for="exampleFormControlFile1">Add image</label>
+                 <input type="file" class="form-control-file" id="exampleFormControlFile1" name="pimg" alt="pruduct " >
             </div>
+            <!-- <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"> image </label>
+                <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="image/surce.webp" name="pimg" >
+            </div> -->
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Price </label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="pprice" required >
@@ -91,9 +99,6 @@
             }
 
 
-
-
-
             ?> 
 
         </div>
@@ -123,7 +128,7 @@
                    $pt= $_SESSION['prices'];
                    $dt= $_SESSION['descs'];
 
-                   for ($i=1; $i <count($nt);++$i ){
+                   for ($i=0; $i <count($nt);++$i ){
                      
                     echo "<th scope='row'>" . $i ."</th>";
                     echo '<td>'. $nt[$i] .'</td>';
@@ -140,7 +145,7 @@
         </div>
         <?php 
         // echo "<bre>";
-        // print_r ( $_SESSION["names"]);
+        // print_r ( $_SESSION["imgs"]);
         // echo "</bre>";
         ?>
 
@@ -156,22 +161,15 @@
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa-solid fa-00"></i></a>
-
-      <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1"  target="_blank"  href="https://www.facebook.com/login/" role="button"><i class="fab fa-facebook-f"></i></a>
 
       <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1"  target="_blank"  href="https://www.instagram.com/" role="button"><i class="fab fa-instagram"></i></a>
 
       <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1"   target="_blank" href="https://www.linkedin.com/feed/" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+
     </section>
     <!-- Section: Social media -->
 
@@ -179,16 +177,14 @@
     <!-- Section: Text -->
     <section class="mb-4">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-        eum harum corrupti dicta, aliquam sequi voluptate quas.
+        BEE FASION is a website dedicated to selling clothes and designing clothes in a creative way. It is based in Jordan and has several branches around the world. It was established in 1999. We are always looking forward to the best.
       </p>
     </section>
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2022 Copyright:
-    <a class="text-white" href="pruductpage.php">MDBootstrap.com</a>
+    <a class="text-white" href="pruductpage.php">BEE fasion.com</a>
   </div>
   <!-- Copyright -->
 </footer>
