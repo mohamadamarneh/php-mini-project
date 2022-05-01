@@ -1,2 +1,2 @@
 # php-mini-project
-https://mohamadamarneh.github.io/php-mini-project/pruductpage.php
+https://mohamadamarneh.github.io/php-mini-project/
