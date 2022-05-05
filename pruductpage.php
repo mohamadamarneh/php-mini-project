@@ -37,7 +37,7 @@ session_start();
     </nav>
   </div>
   <main>
-  <h2 class="h2">OUR PRODUCTS</h2>
+  <h2 class="container">OUR PRODUCTS</h2>
     <div class="container">
       <div class="row">
         <!-- <h2>OUR PRODUCTS </h2> -->
@@ -92,7 +92,7 @@ if (isset($_SESSION['descs'])) {
             echo '<div class="card" style="width: 18rem;  height: 572px; ">';
             echo   '<img src='."' img/" .$it[$i]. "'".' alt=" image not upluaded ">';
             echo   '<div class="card-body">';
-            echo     '<h5 class="card-title">'. $nt[$i] .count($nt) ." roll num ". $i . '</h5>';
+            echo     '<h5 class="card-title">'. $nt[$i]  . '</h5>';
             echo     '<p class="card-text">' . $dt[$i].'</p>';
             echo     '<a href="#"  class="text-end">' ."$" . $pt[$i]. ".00".'</a>';
             echo   ' </div>';

@@ -34,7 +34,7 @@
     </nav>
   </div>
   <div class="maa">
-  <h2 class="h2">Add Item </h2>
+  <h2 class="container">Add Item </h2>
   
   <form action="managepage.php" method="post">
         <div class="container">
